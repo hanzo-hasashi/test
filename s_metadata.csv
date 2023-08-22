@@ -1,0 +1,82 @@
+Entity Name,Attribute Name,Attribute Data Type,Pseudonymization
+studentattendance,,,
+,id,string,hash
+,student_id,string,hash
+,school_year,integer,partition-by
+,school_id,string,no-op
+,attendance_date,timestamp,no-op
+,all_day,string,no-op
+,Period,short,no-op
+,section_id,string,no-op
+,AttendanceCode,string,no-op
+,PresenceFlag,boolean,no-op
+,attendance_status,string,no-op
+,attendance_type,string,no-op
+,attendance_sequence,short,no-op
+studentsectionmark,,,
+,id,string,hash
+,student_id,string,hash
+,section_id,string,no-op
+,school_year,integer,partition-by
+,term_id,string,no-op
+,numeric_grade_earned,short,no-op
+,alpha_grade_earned,string,no-op
+,is_final_grade,string,no-op
+,credits_attempted,short,no-op
+,credits_earned,short,no-op
+,grad_credit_type,string,no-op
+students,,,
+,SIS ID,string,hash
+,School SIS ID,string,no-op
+,Username,string,mask
+,First Name,string,mask
+,Last Name,string,mask
+,Middle Name,string,mask
+,Secondary Email,string,mask
+,Student Number,string,hash
+,Grade,string,no-op
+,State ID,string,hash
+,Status,string,no-op
+,Birthdate,string,no-op
+,Graduation Year,short,no-op
+,Gender,string,no-op
+,FederalRaceCategory,string,no-op
+,PrimaryLanguage,string,no-op
+,ELLStatus,string,no-op
+,SpecialEducation,string,no-op
+,LowIncome,boolean,no-op
+,CumulativeGPA,string,no-op
+student-mat,,,
+,school,string,no-op
+,sex,string,no-op
+,age,integer,no-op
+,address,string,no-op
+,famsize,string,no-op
+,Pstatus,string,no-op
+,Medu,integer,no-op
+,Fedu,integer,no-op
+,Mjob,string,no-op
+,Fjob,string,no-op
+,reason,string,no-op
+,guardian,string,no-op
+,traveltime,integer,no-op
+,studytime,integer,no-op
+,failures,integer,no-op
+,schoolsup,string,no-op
+,famsup,string,no-op
+,paid,string,no-op
+,activities,string,no-op
+,nursery,string,no-op
+,higher,string,no-op
+,internet,string,no-op
+,romantic,string,no-op
+,famrel,integer,no-op
+,freetime,integer,no-op
+,goout,integer,no-op
+,Dalc,integer,no-op
+,Walc,integer,no-op
+,health,integer,no-op
+,absences,integer,no-op
+,G1,integer,no-op
+,G2,integer,no-op
+,G3,integer,no-op
